@@ -31,7 +31,7 @@ function Signup() {
             const data = await response.json();
 
             if (!response.ok) {
-                throw new Error(data.message || '회원가입 실패');
+                throw new Error(data.message || '회원가입 실패 , 다시 시도해보세요.');
             }
 
             alert('회원가입 성공!');
