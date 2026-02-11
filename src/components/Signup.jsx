@@ -34,7 +34,7 @@ function Signup() {
                 throw new Error(data.message || '회원가입 실패 , 다시 시도해보세요.');
             }
 
-            alert('회원가입 성공!');
+            alert('회원가입 성공!, 이제 로그인을 시도해보세요.');
             navigate('/login');
         } catch (err) {
             setError(err.message);
